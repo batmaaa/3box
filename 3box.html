@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           display: grid;
+           place-items: center;
+           min-height: 100vh;
+           gap: 10px;
+        }
+        .too{
+            background-color: black;
+            width: 300px;
+            height: 150px;
+            color: white;
+            font-size: 50px;
+            line-height: 150px;
+            text-align: center;
+        }
+        .neg{
+           display: none;
+        }
+        .hoyor{
+           display: none;
+        }
+        .gurav{
+           display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button onclick="too.style.backgroundColor='Red',neg.style.display='block',hoyor.style.display='none',gurav.style.display='none'">red</button>
+        <button onclick="too.style.backgroundColor='Green',hoyor.style.display='block',neg.style.display='none',gurav.style.display='none'">green</button>
+        <button onclick="too.style.backgroundColor='blue',gurav.style.display='block',neg.style.display='none',hoyor.style.display='none'">blue</button>
+    </div>
+    <div class="too" id="too">
+        <div class="neg" id="neg">red</div>
+        <div class="hoyor" id="hoyor">green</div>
+        <div class="gurav" id="gurav">blue</div>
+    </div>
+</body>
+</html>
